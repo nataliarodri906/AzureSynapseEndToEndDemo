@@ -1,0 +1,16 @@
+{
+	"name": "Observation",
+	"properties": {
+		"content": {
+			"query": ".create table ObservationsTable (Observation_id: string, resourceType: string, issued: string, status: string, patient_id_reference: string, encounter_id_reference: string, effectiveDateTime: datetime , valueQuantity_code: string, valueQuantity_system: string, valueQuantity_unit: string , valueQuantity_value: double , valueString: string)",
+			"metadata": {
+				"language": "kql"
+			},
+			"currentConnection": {
+				"poolName": "adxpoolmedicaldata",
+				"databaseName": "ObservationData"
+			}
+		},
+		"type": "KqlQuery"
+	}
+}

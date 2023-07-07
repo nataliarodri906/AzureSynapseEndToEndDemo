@@ -1,0 +1,53 @@
+{
+	"name": "ObservationsData_ToSDXPool",
+	"properties": {
+		"activities": [
+			{
+				"name": "CopyObservationsFromADLStoADXPool",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"parameters": {
+			"StorageName": {
+				"type": "string",
+				"defaultValue": "storagemedicaldata"
+			},
+			"ServerName": {
+				"type": "string",
+				"defaultValue": "synapsewkspcnr98"
+			},
+			"DataExplorerPoolName": {
+				"type": "string",
+				"defaultValue": "asxpoolmedicaldata"
+			},
+			"DatasetSize": {
+				"type": "string",
+				"defaultValue": "1tb"
+			},
+			"DatabaseName": {
+				"type": "string",
+				"defaultValue": "ObservationData"
+			},
+			"TableName": {
+				"type": "string",
+				"defaultValue": "ObservationsTable"
+			}
+		},
+		"folder": {
+			"name": "Observation"
+		},
+		"annotations": []
+	}
+}
