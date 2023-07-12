@@ -30,7 +30,7 @@
 			},
 			"DataExplorerPoolName": {
 				"type": "string",
-				"defaultValue": "asxpoolmedicaldata"
+				"defaultValue": "adxpoolmedicaldata"
 			},
 			"DatasetSize": {
 				"type": "string",
